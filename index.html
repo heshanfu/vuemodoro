@@ -13,11 +13,22 @@
     <header class="header">
         <div class="content has-text-centered">
             <img src="assets/logo.png" alt="vuemodoro" />
-            <h2 class="subtitle">Podomoro Timer as Vue single file component</h2>
-        </div>
+            <h4 class="title is-3 is-spaced">Pomodoro Timer as Vue single file component</h4>
+
+            <div class="container">
+                <div class="columns">
+                    <div class="column is-12">
+                        <div class="bd-footer-iframe is-github">
+                            <a class="github-button" href="https://github.com/P3trur0/vuemodoro" data-show-count="true"
+                                aria-label="Star p3trur0/vuemodoro on GitHub">Star</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </header>
 
     <div id='app'>
+
         <div>
             <Ribbon text='I am on GitHub!' url='https://github.com/P3trur0/vuemodoro' />
         </div>
@@ -41,7 +52,7 @@
             <Pomodoro theme='bare' :minutes='10' pomodoro-label='Long Break!' />
         </div>
     </div>
- 
+
     <div class='container'>
         <h4 class='title is-4 is-spaced'>Available properties</h4>
         <table class='table is-centered is-bordered is-striped'>
@@ -63,7 +74,7 @@
                 <tr>
                     <td><strong>seconds</strong></td>
                     <td><code>0</code></td>
-                    <td><em>sets the seconds of the countdowm</em></td>
+                    <td><em>sets the seconds of the countdown</em></td>
                     <td>Number</td>
                 </tr>
                 <tr>
@@ -121,6 +132,7 @@
 <script src="https://unpkg.com/vue"></script>
 <script src="https://unpkg.com/vuemodoro"></script>
 <script src="https://unpkg.com/vue-ribbon"></script>
+<script src="https://buttons.github.io/buttons.js"></script>
 <script>
     Vue.config.productionTip = false
     new Vue({
